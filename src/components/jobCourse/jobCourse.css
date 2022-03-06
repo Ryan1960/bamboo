@@ -1,27 +1,23 @@
-.job {
-  margin: 0;
-  padding: 0;
-  height: 5800px;
-}
-
 .qz-head {
   font-size: 54px;
   font-weight: 600;
   text-align: center;
   margin-top: 100px;
 }
+.pig {
+  text-align: center;
+  position: relative;
+  height: 90vh;
+}
 .qz-head2,
 .qz-head3 {
+  margin-top: 15px;
   font-size: 29px;
-  margin: 25px 0px;
-  color: gray;
 }
-.one {
-  position: relative;
-  text-align: center;
-}
+
 .qz-head-img2 {
   position: absolute;
+  display: block;
   top: 15px;
   right: 35px;
 }
@@ -54,12 +50,12 @@
 .one {
   height: 100vh;
 }
-.two {
+.ship {
   height: 100vh;
   text-align: center;
 }
-.three {
-  height: 100vh;
+.classCategory {
+  height: 80vh;
 }
 .qz-body-1 {
   margin-top: 100px;
@@ -187,20 +183,16 @@ li {
 .secD {
   background: " #f7f9fb";
 }
-.four {
+.ourService {
   background-color: " #f7f9fb";
 }
-.secDP {
-  margin: 0px auto;
-  display: block;
-  background: " #f7f9fb";
-}
+
 .contactForm {
   width: 100%;
 }
 .selectE2 {
   text-align: center;
-  background-image: url(./img/contactForm.png);
+  background-image: url(../../img/contactForm.png);
   background-position: center;
   color: white;
   margin: 50px auto;
@@ -209,6 +201,10 @@ li {
   justify-content: space-evenly;
   width: 80%;
   border-radius: 5px;
+}
+.selectE {
+  margin-top: -950px;
+  height: 350px;
 }
 .go-text-1 {
   text-align: center;

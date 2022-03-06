@@ -1,15 +1,17 @@
 import React from "react";
 
-import img_1 from "./img/img-1.png";
+import img_1 from "../../img/img-1.png";
 import "./about.css";
 import { Grid } from "@material-ui/core";
-import img2 from "./img/img-2.png";
-import img3 from "./img/img-3.png";
-import img4 from "./img/img-4.png";
-import deco1 from "./img/deco1.png";
-import deco2 from "./img/deco2.png";
-import deco3 from "./img/deco3.png";
-import img5 from "./img/img-5.png";
+import img2 from "../../img/img-2.png";
+import img3 from "../../img/img-3.png";
+import img4 from "../../img/img-4.png";
+import deco1 from "../../img/deco1.png";
+import deco2 from "../../img/deco2.png";
+import deco3 from "../../img/deco3.png";
+import img5 from "../../img/img-5.png";
+import { GreenFoot } from "../../univers/greenFoot";
+import { Words } from "./words/words";
 
 export default function About() {
   return (
@@ -32,7 +34,7 @@ export default function About() {
           <img className="headP" src={img_1} />
         </div>
       </div>
-      <div className="two">
+      <div className="ant">
         <div className="title">为什么选择我们</div>
         <div className="text2">
           在纽约竹子学到的每一个求职技巧都是竹子老师融合扎实的行业经验以及业内人士的建议总结出来的。每
@@ -43,88 +45,34 @@ export default function About() {
           竹子老师对求职辅导和职业发展都有独特的方法和见解，完整高效的辅导课程让我们与众不同。
         </div>
       </div>
-      <div className="selectB">
-        <h1 className="hp-head3">纽约竹子创始人</h1>
-        <Grid
-          container
-          className="selc_100"
-          justifyContent="space-between"
-          spacing={10}
-        >
-          <Grid item xs={6}>
-            <div className="ren">
-              <img src={img2} className="img-left-left-img1" />
-              <img src={img3} className="img-left-left-img2" />
-              <img src={img4} className="img-left-left-img3" />
-              <img src={deco1} className="img-left-left-img4" />
-              <img src={deco2} className="img-left-left-img5" />
-            </div>
-          </Grid>
-          <Grid item xs={6}>
-            <ul className="img-right-text">
-              <li>
-                <span className="img-right-text-color">
-                  美国并购交M&A Consulting高级咨询顾问
-                </span>
-              </li>
-              <li>
-                <span className="img-right-text-color">
-                  先后就职美国德勤,安永,PIMCO,索尼总部
-                </span>
-              </li>
-              <li>
-                <span className="img-right-text-color">
-                  6年华尔街金融战略财务咨询工作经验
-                </span>
-              </li>
-              <li>
-                <span className="img-right-text-color">
-                  四大校园面试招聘官, 项目经理
-                </span>
-              </li>
-              <li>
-                <span className="img-right-text-color">
-                  美国注册会计师, 独立顶尖职业咨询师
-                </span>
-              </li>
-              <li>
-                <span className="img-right-text-color">
-                  成功助力上百名求职学生斩获世界500强offer,
-                </span>
-              </li>
-              <li>
-                <span className="img-right-text-color">
-                  如四大,花旗,亚马逊,字节跳动等
-                </span>
-              </li>
-              <li>
-                <span className="img-right-text-color">
-                  专栏作家, 自媒体人, 琵琶演奏者
-                </span>
-              </li>
-              <li>
-                <span className="img-right-text-color">
-                  纽约女性领导力论坛唯 亚裔女性演讲嘉宾
-                </span>
-              </li>
-              <li>
-                <span className="img-right-text-color">美国高校客座嘉宾</span>
-              </li>
-              <li>
-                <span className="img-right-text-color">竹子会客厅发起人</span>
-              </li>
-            </ul>
-          </Grid>
-        </Grid>
-        <div className="text-1">
-          <img src={deco3} className="text-1-img" />
-          <span className="text-1-text">
-            “我们都是渺小的个体，但是聚沙成塔，就会有很大的力量。我致力于为国内外企业输送人才，将个体的
-            潜力做到最大的挖掘，就是培养中国人才的第一步。人才是故事的载体，我期待着，更多的留学生能够拥
-            抱世界，成为全球化人才，一起讲好中国故事。”
-          </span>
+      <div className="img-left">
+        <div className="img-left-left">
+          <img src={img2} className="img-left-left-img1" />
+          <img src={img3} className="img-left-left-img2" />
+          <img src={img4} className="img-left-left-img3" />
+          <img src={deco1} className="img-left-left-img4" />
+          <img src={deco2} className="img-left-left-img5" />
+        </div>
+        <div className="img-right">
+          <p className="img-right-title">纽约竹子创始人</p>
+          <Words
+            children={[
+              " 美国并购交M&A Consulting高级咨询顾问",
+              "  先后就职美国德勤,安永,PIMCO,索尼总部",
+              "6年华尔街金融战略财务咨询工作经验",
+              " 四大校园面试招聘官, 项目经理",
+              "    美国注册会计师, 独立顶尖职业咨询师",
+              " 成功助力上百名求职学生斩获世界500强offer",
+              "  如四大,花旗,亚马逊,字节跳动等",
+              "    专栏作家, 自媒体人, 琵琶演奏者",
+              "   纽约女性领导力论坛唯 亚裔女性演讲嘉宾",
+              "美国高校客座嘉宾",
+              "竹子会客厅发起人",
+            ]}
+          />
         </div>
       </div>
+
       <Grid container className="five">
         <Grid item xs={6} className="img-img-bg">
           <img className="pig-pig" src={img5} />
@@ -154,13 +102,10 @@ export default function About() {
           </p>
         </Grid>
       </Grid>
-      <div className="six">
-        <div className="selectE2">
-          <div className="go-text-1">让我们开始吧！</div>
-          <div className="go-text-2">让我来帮助你实现你的职场目标</div>
-          <div className="go-text-3">免费咨询</div>
-        </div>
-      </div>
+      <GreenFoot>
+        <div className="go-text-1">让我们开始吧！</div>
+        <div className="go-text-2">让我来帮助你实现你的职场目标</div>
+      </GreenFoot>
     </div>
   );
 }

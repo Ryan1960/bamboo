@@ -1,9 +1,9 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
-import ig from "./img/ig.png";
-import linkedin from "./img/linkedin.png";
-import youtube from "./img/youtube.png";
-import img6 from "./img/img-6.jpg";
+import ig from "../../img/ig.png";
+import linkedin from "../../img/linkedin.png";
+import youtube from "../../img/youtube.png";
+import img6 from "../../img/img-6.jpg";
 import "./footer.css";
 
 export default function Footer() {

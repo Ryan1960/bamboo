@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import Home from "./components/home/home";
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/footer/footer";
+
 function NYBamboo() {
   return (
     <div>
@@ -33,7 +34,7 @@ function NYBamboo() {
           { label: "关于我们", path: "/about", component: <About /> },
         ]}
       />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
